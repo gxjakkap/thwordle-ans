@@ -13,7 +13,7 @@
   >
     <a
       class="flex justify-center"
-      href="https://github.com/nuxt/nuxt.js"
+      href="https://github.com/gxjakkap/thwordle-ans"
       target="_blank"
       ><svg
         class="w-6 h-6 text-gray-600 hover:text-gray-800 button--github"
