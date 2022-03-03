@@ -6,13 +6,22 @@ export default {
   head: {
     title: 'thwordle-ans',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'th',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' },
+      { hid: 'description', name: 'description', content: 'today thwordle answer' },
+      { hid: 'keywords', name: 'keywords', content: '' },
+      { hid: 'twitter:site', name: 'twitter:site', content: 'thwordle-ans' },
+      { hid: 'twitter:url', name: 'twitter:url', content: 'https://thwordle-ans.vercel.app' },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content: 'today thwordle answer'
+      }
+
+
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
@@ -39,17 +48,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
-  ],
-
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {
-    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
-  },
-
+  modules: [],
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 }
