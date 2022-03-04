@@ -1,10 +1,7 @@
 <template>
   <div class="flex justify-center pt-20">
-    <Modal v-show="isModalVisible" @close="closeModal" />
-    <div
-      class="fixed items-top overflow-hidden text-center"
-      v-show="!isModalVisible"
-    >
+    <Modal v-if="isModalVisible" @close="closeModal" />
+    <div class="fixed items-top overflow-hidden text-center" v-else>
       <div class="flex text-center justify-center">
         <h1 class="text-5xl text-center flex py-5">thwordle-answer</h1>
       </div>
