@@ -3,16 +3,19 @@
     <Modal v-if="isModalVisible" @close="closeModal" />
     <div class="fixed items-top overflow-hidden text-center" v-else>
       <div class="flex text-center justify-center">
-        <h1 class="text-5xl text-center flex py-5">thwordle-answer</h1>
+        <h1 class="text-5xl text-center flex py-5 text-red-400">
+          Thwordle-answer
+        </h1>
+        <hr />
       </div>
       <p class="flex justify-center text-center text-xl">วันที่: {{ day }}</p>
       <p class="flex justify-center text-center">
         {{ today }}
       </p>
-      <h2 class="flex justify-center text-center text-2xl">
+      <h2 class="flex justify-center text-center mt-5 text-2xl">
         คำตอบประจำวันนี้:
       </h2>
-      <h2 class="text-4xl mt-5 flex justify-center text-center">{{ word }}</h2>
+      <h2 class="text-4xl mt-3 flex justify-center text-center">{{ word }}</h2>
     </div>
     <Footer />
   </div>

@@ -35,7 +35,7 @@
       class="flex justify-center"
       href="https://twitter.com/guntxjakka"
       target="_blank"
-      >Made by Guntxjakka</a
+      >Made by GuntxJakka</a
     >
   </div>
 </template>
