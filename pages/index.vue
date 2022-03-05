@@ -6,8 +6,8 @@
         <h1 class="text-5xl text-center flex py-5 text-red-400">
           Thwordle-answer
         </h1>
-        <hr />
       </div>
+      <hr class="h-5" />
       <p class="flex justify-center text-center text-xl">วันที่: {{ day }}</p>
       <p class="flex justify-center text-center">
         {{ today }}
