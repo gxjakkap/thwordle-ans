@@ -1,6 +1,7 @@
 <template>
   <div class="flex justify-center pt-20">
     <Modal v-if="isModalVisible" @close="closeModal" />
+
     <div class="fixed items-top overflow-hidden text-center" v-else>
       <div class="flex text-center justify-center">
         <h1 class="text-5xl text-center flex py-5 text-red-400">
@@ -23,8 +24,9 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import word from '~/plugins/words'
 import Modal from '~/components/Modal.vue'
+import wl from '~/static/words.json'
+
 export default Vue.extend({
   name: 'IndexPage',
   components: {
@@ -34,12 +36,13 @@ export default Vue.extend({
     const epochDate = 1642525200000
     const today = new Date()
     const todayEp = today.getTime()
-    const dateIndex = Math.floor((todayEp - epochDate) / 86400000)
+    const day = Math.floor((todayEp - epochDate) / 86400000)
+    const word = wl.words
     return {
       isModalVisible: true,
-      day: dateIndex + 1,
+      day: day + 1,
       today: today.toString(),
-      word: word[dateIndex],
+      word: word[day % word.length],
     }
   },
   methods: {
