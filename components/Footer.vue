@@ -32,7 +32,12 @@
         /></svg
     ></a>
     <a
-      class="flex justify-center"
+      class="flex justify-center hover:underline hover:text-blue-500"
+      href="https://twitter.com/messages/compose?recipient_id=1338534842447798274"
+      >คำตอบไม่ตรง?</a
+    >
+    <a
+      class="flex justify-center hover:underline hover:text-blue-500"
       href="https://twitter.com/guntxjakka"
       target="_blank"
       >Made by GuntxJakka</a

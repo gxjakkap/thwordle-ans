@@ -9,9 +9,8 @@
         </h1>
       </div>
       <hr class="h-5" />
-      <p class="flex justify-center text-center text-xl">วันที่: {{ day }}</p>
-      <p class="flex justify-center text-center">
-        {{ today }}
+      <p class="flex justify-center text-center text-xl">
+        วันที่: {{ day }} | {{ today }}
       </p>
       <h2 class="flex justify-center text-center mt-5 text-2xl">
         คำตอบประจำวันนี้:
@@ -41,7 +40,7 @@ export default Vue.extend({
     return {
       isModalVisible: true,
       day: day + 1,
-      today: today.toString(),
+      today: today.toDateString(),
       word: word[day % word.length],
     }
   },
