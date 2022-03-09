@@ -38,6 +38,11 @@
     >
     <a
       class="flex justify-center hover:underline hover:text-blue-500"
+      href="https://wordle-ans.vercel.app"
+      >Check out Wordle Answer</a
+    >
+    <a
+      class="flex justify-center hover:underline hover:text-blue-500"
       href="https://twitter.com/guntxjakka"
       target="_blank"
       >Made by GuntxJakka</a
