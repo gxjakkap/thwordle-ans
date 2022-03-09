@@ -22,3 +22,7 @@ $ yarn start
 # generate static project
 $ yarn generate
 ```
+
+## License
+
+[MIT License](https://github.com/gxjakkap/wordle-ans/blob/main/LICENSE)
